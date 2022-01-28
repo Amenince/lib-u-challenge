@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    color: white;
+    width: fit-content;
+}
+
+
+.content {
+    background: linear-gradient(rgb(47, 73, 80), rgb(7, 19, 31));
+    align-items: center;
+    /* min-width: 100%;
+    min-height: 100%; */
+    display: flex;
+    flex-direction: column;
+}
+
+.People {
+    padding: 40px;
+}
+
+.loadmore {
+    min-width: 50px;
+    min-height: 50px;
+    color: white;
+    background: none;
+    background-color: skyblue;
+    border: solid skyblue 1px;
+    font-size: xx-large;
+    clip-path: circle();
+    padding: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.loadmore:hover {
+    background-color: rgb(122, 188, 214);
+}
+
+.hidden {
+    display: none;
+}
+
+#challengeNum {
+    min-width: 100vw;
+    background-color: rgb(5, 11, 29);
+    padding: 20px;
+    text-align: center;
+}
+
+#posts {
+    align-self: center;
+}
+
+#searchbox {
+    background: linear-gradient(45deg, white, rgb(186, 229, 247));
+    border-style: none;
+    padding: 10px;
+    padding-left: 15px;
+    width: 85%;
+}
+
+#magnify {
+    border-style: none;
+    background-color: rgb(186, 229, 247);
+    padding: 10px;
+    float: right;
+    position: absolute;
+    cursor: pointer;
+}
+
+::placeholder {
+    font-weight: bold;
+}
+
+#filter {
+    align-self: center;
+    width: 400px;
+}
+
+.inner {
+    text-align: center;
+    background: linear-gradient(120deg, rgba(52, 159, 209, 0.2), rgb(9, 41, 71) 80%);
+    padding-top: 20px;
+    border-bottom: solid skyblue 2px;
+}
+
+#author {
+    padding-top: 20px;
+}
+
+#info {
+    line-height: normal;
+    font-size: small;
+}
+
+#author,#info {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.cardinner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+    /* justify-content: center; */
+}
+
+.card {
+    /* min-width: 300px; */
+    /* height: fit-content; */
+    border: solid skyblue 2px;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(120deg, rgba(255,255,255,.5), rgb(7, 19, 31) 50%);
+    line-height: 25px;
+    box-shadow: 2px 2px 15px rgb(131, 191, 240);
+}
+
+.card:hover {
+    background: linear-gradient(120deg, rgba(255,255,255,.7), rgb(7, 19, 31) 50%);
+    box-shadow: 2px 2px 15px rgb(93, 224, 61);
+    transition: 200ms ease-in-out;
+    
+}
+
+
+
+#posts,#filter,#postTitle,#author,#info {
+    padding-bottom: 40px;
+}
+
+.contact {
+    min-width: 100vw;
+    display: flex;
+    background-color: rgb(5, 11, 29);
+    text-align: center;
+    justify-content: center;
+}
+
+a {
+    color: white;
+}
+
+.contact>a {
+    padding: 20px;
+}
+
+.contact>a:visited {
+    color: skyblue;
+}
+
+.contact>a:hover {
+    background-color: rgb(14, 24, 51);
+    
+}
